@@ -1,0 +1,47 @@
+Nunues Silk – Catálogo de Camisetas Personalizadas
+Projeto de vitrine e catálogo responsivo para a marca fictícia Nunues Silk, focada em personalização de camisetas, com interface otimizada para web e dispositivos móveis.
+
+🎯 Objetivo do Projeto
+Criar a página inicial de um e-commerce de camisetas personalizadas, exibindo o catálogo de produtos com layout responsivo, filtros básicos e estrutura pronta para futura integração com carrinho e editor de personalização.
+
+🧩 Funcionalidades
+Listagem de camisetas em formato de cards (imagem, nome, preço e breve descrição).
+
+Layout responsivo (grid que se adapta para 1 coluna no mobile e múltiplas colunas no desktop).
+
+Barra de navegação com logo “Nunues Silk” e links principais (Home, Catálogo, Contato, etc.).
+
+Filtro básico por:
+
+Tamanho (P, M, G, GG, etc.).
+
+Cor.
+
+Categoria/modelagem (unissex, feminina, infantil, plus size).
+
+Componente de destaque para promoções ou coleções especiais.
+
+Botão de “Ver detalhes” em cada produto (apontando para página de produto ou modal, a ser implementado).
+
+Estrutura preparada para integração futura com:
+
+Carrinho de compras.
+
+Editor de personalização de camisetas.
+
+Login/área do cliente.
+
+🛠️ Tecnologias Utilizadas
+Adapte conforme suas escolhas (exemplos abaixo):
+
+HTML5
+
+CSS3 (ou Tailwind CSS / Bootstrap)
+
+JavaScript (ou TypeScript)
+
+Framework de front-end:
+
+React (Create React App, Vite ou Next.js)
+
+ou Vue (CLI, Vite ou Nuxt)
