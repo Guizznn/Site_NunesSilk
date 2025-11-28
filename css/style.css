@@ -1,0 +1,269 @@
+:root {
+    --ns-red: #e40000;    /* ajuste fino conforme a logo */
+    --ns-dark: #111111;
+    --ns-light: #ffffff;
+    --ns-gray: #f4f4f4;
+  }
+  
+  /* Reseta simples */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: var(--ns-gray);
+    color: var(--ns-dark);
+  }
+  
+  /* HEADER */
+  header {
+    background-color: var(--ns-dark);
+    color: var(--ns-light);
+  }
+  
+  .top-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  /* Navegação */
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-menu a {
+    color: var(--ns-light);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-menu a:hover {
+    color: var(--ns-red);
+  }
+  
+  /* HERO */
+  .hero {
+    background-color: var(--ns-red);
+    color: var(--ns-light);
+  }
+  
+  .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .hero p {
+    max-width: 480px;
+    margin-bottom: 1.25rem;
+  }
+  
+  /* BOTÕES */
+  .btn-primary,
+  .btn-secondary,
+  .btn-details {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+  }
+  
+  .btn-primary {
+    background-color: var(--ns-light);
+    color: var(--ns-red);
+  }
+  
+  .btn-primary:hover {
+    background-color: #ffeaea;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--ns-light);
+    color: var(--ns-light);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--ns-light);
+    color: var(--ns-red);
+  }
+  
+  .btn-details {
+    background-color: var(--ns-red);
+    color: var(--ns-light);
+  }
+  
+  .btn-details:hover {
+    background-color: #c00000;
+  }
+  
+  /* MAIN */
+  main {
+    max-width: 1200px;
+    margin: 1.5rem auto 2rem;
+    padding: 0 1rem;
+  }
+  
+  /* Filtragem */
+  #filtros {
+    background-color: var(--ns-light);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+  }
+  
+  #filtros h2 {
+    margin-bottom: 0.75rem;
+  }
+  
+  #filtros form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    align-items: flex-end;
+  }
+  
+  #filtros fieldset {
+    border: none;
+  }
+  
+  #filtros legend {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  #filtros select,
+  #filtros button {
+    padding: 0.4rem 0.7rem;
+  }
+  
+  #filtros button {
+    background-color: var(--ns-red);
+    border: none;
+    color: var(--ns-light);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Destaque */
+  #destaque {
+    margin-bottom: 1.5rem;
+  }
+  
+  #destaque h2 {
+    margin-bottom: 0.75rem;
+  }
+  
+  .banner-destaque {
+    background-color: var(--ns-dark);
+    color: var(--ns-light);
+    padding: 1.25rem;
+    border-radius: 6px;
+  }
+  
+  /* Catálogo */
+  #catalogo h2 {
+    margin-bottom: 0.75rem;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+  }
+  
+  .product-card {
+    background-color: var(--ns-light);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .product-card h3 {
+    font-size: 1rem;
+    margin: 0.75rem 0.75rem 0.25rem;
+  }
+  
+  .product-price {
+    color: var(--ns-red);
+    font-weight: 700;
+    margin: 0 0.75rem;
+  }
+  
+  .product-desc {
+    font-size: 0.85rem;
+    margin: 0.5rem 0.75rem 0.75rem;
+    flex: 1;
+  }
+  
+  .product-card .btn-details {
+    margin: 0 0.75rem 0.75rem;
+    text-align: center;
+  }
+  
+  /* Seções de texto */
+  #sobre,
+  #contato {
+    margin-top: 2rem;
+  }
+  
+  #sobre h2,
+  #contato h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: var(--ns-dark);
+    color: var(--ns-light);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+  
+  /* Responsividade básica */
+  @media (max-width: 768px) {
+    .top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .nav-menu {
+      flex-wrap: wrap;
+    }
+  }
+  
