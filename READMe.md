@@ -1,6 +1,6 @@
-# Nunues Silk – Catálogo de Camisetas Personalizadas
+# Nunes Silk – Catálogo de Camisetas Personalizadas
 
-Projeto de vitrine e catálogo responsivo para a marca fictícia **Nunues Silk**, focada em personalização de camisetas, com interface otimizada para web e dispositivos móveis.
+Projeto de vitrine e catálogo responsivo para a marca fictícia **Nunes Silk**, focada em personalização de camisetas, com interface otimizada para web e dispositivos móveis.
 
 ---
 
@@ -14,7 +14,7 @@ Criar a **página inicial de um e-commerce** de camisetas personalizadas, exibin
 
 * Exibição de camisetas em **cards** contendo imagem, nome, preço e breve descrição.
 * **Layout responsivo**, com grid adaptável (1 coluna no mobile e múltiplas colunas no desktop).
-* **Barra de navegação** com logo "Nunues Silk" e links principais (Home, Catálogo, Contato, etc.).
+* **Barra de navegação** com logo "Nunes Silk" e links principais (Home, Catálogo, Contato, etc.).
 * **Filtros básicos**, incluindo:
 
   * Tamanho (P, M, G, GG...)
@@ -73,11 +73,11 @@ bash
 
 # Clone o repositório
 
-git clone [https://github.com/seu-usuario/nunues-silk](https://github.com/seu-usuario/nunues-silk)
+git clone [https://github.com/seu-usuario/nunes-silk](https://github.com/seu-usuario/nunes-silk)
 
 # Acesse a pasta do projeto
 
-cd nunues-silk
+cd nunes-silk
 
 # Se estiver usando React/Vite/Next:
 
