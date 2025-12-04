@@ -137,6 +137,8 @@
     cursor: pointer;
 }
 
+
+
 /* Estilo para os itens de menu com setas (como LISO e PERSONALIZADOS) */
 .menu-group {
     display: flex;
@@ -235,7 +237,7 @@
   /* MAIN */
   main {
     max-width: 1200px;
-    margin: 1.5rem auto 2rem;
+    margin: 1.5rem auto 4rem;
     padding: 0 1rem;
   }
   
@@ -295,6 +297,7 @@
     color: var(--ns-light);
     padding: 1.25rem;
     border-radius: 6px;
+    margin-top: 3rem;
   }
   
   /* Catálogo */
@@ -345,25 +348,112 @@
     text-align: center;
   }
   
-  /* Seções de texto */
-  #sobre,
-  #contato {
-    margin-top: 2rem;
-  }
-  
-  #sobre h2,
-  #contato h2 {
+ 
+  /* Estilo para o banner de Título da Página (usado no sobre.html) */
+.page-title-banner {
+    background-color: var(--ns-red); /* Cor de fundo vermelha */
+    color: var(--ns-light);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.page-title-banner h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Estilo específico para a página Sobre Nós */
+#sobre-nos-conteudo {
+    padding: 2rem 0; /* Espaço acima e abaixo do conteúdo */
+}
+
+#sobre-nos-conteudo h2, 
+#sobre-nos-conteudo h3 {
+    margin-top: 1.5rem; /* Espaço generoso antes de novos títulos */
+    margin-bottom: 0.75rem;
+    color: var(--ns-red); /* Destaca os títulos internos */
+}
+
+#sobre-nos-conteudo ul {
+    list-style: disc; /* Garante que os valores tenham marcadores */
+    margin-left: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+#sobre-nos-conteudo li {
     margin-bottom: 0.5rem;
-  }
+}
   
   /* FOOTER */
   footer {
     background-color: var(--ns-dark);
     color: var(--ns-light);
     text-align: center;
-    padding: 1rem;
-    font-size: 0.85rem;
+    padding: 2rem 1rem 0.5rem;
+    font-size: 0.9rem;
   }
+
+  .footer-content {
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+}
+
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    color: var(--ns-red); /* Destaca o título da seção */
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo dos Ícones Sociais */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    color: var(--ns-light);
+}
+
+.social-icons svg {
+    fill: none; /* Como estamos usando stroke, o fill deve ser none */
+    stroke: currentColor; /* Usa a cor do link pai */
+    width: 28px;
+    height: 28px;
+}
+
+.social-icons a:hover {
+    color: var(--ns-red);
+}
+
+.copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Responsividade para o footer */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
   
   /* Responsividade básica */
   @media (max-width: 768px) {
