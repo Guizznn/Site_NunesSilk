@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="../assets/nunesicon.ico">
   <title>Nunes Silk - Camisetas Personalizadas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Nunes Silk - Catálogo de camisetas personalizadas.">
@@ -15,7 +16,7 @@
         </svg>
       </button>
 
-        <a href="#" class="logo logo-center">
+        <a href="../html/index.html" class="logo logo-center">
             <img src="../assets/logo.png"
                  alt="Nunes Silk Estamparia">
           </a>   
@@ -31,7 +32,7 @@
             </div>
             
             <ul class="nav-menu">
-              <li><a href="#">Home</a></li>
+              <li><a href="../html/index.html">Home</a></li>
               <li><a href="#catalogo">Catálogo</a></li>
               <li class="menu-group">
                   <a href="#">LISO</a>
@@ -39,7 +40,14 @@
             </li>
               <li class="menu-group">
                   <a href="#">PERSONALIZADOS</a>
-                  <span class="arrow-icon"> > </span> 
+                  <span class="arrow-icon submenu-toggle"> > </span> 
+                  <ul class="submenu">
+                  </ul>
+              </li>
+
+              <li class="menu-group has-submenu">
+                <a href="#" class="submenu-toggle">PERSONALIZADOS</a>
+                <span class="arrow-icon submenu-toggle"> > </span>
               </li>
               <li><a href="../html/sobre.html">Sobre Nós</a></li>
               <li><a href="#contato">Contato</a></li>
@@ -68,46 +76,7 @@
   </header>
 
   <main>
-    <section id="filtros" aria-label="Filtros do catálogo">
-      <h2>Filtrar camisetas</h2>
-
-      <form>
-        <fieldset>
-          <legend>Tamanho</legend>
-          <select name="tamanho">
-            <option value="">Todos</option>
-            <option value="P">P</option>
-            <option value="M">M</option>
-            <option value="G">G</option>
-            <option value="GG">GG</option>
-          </select>
-        </fieldset>
-
-        <fieldset>
-          <legend>Cor</legend>
-          <select name="cor">
-            <option value="">Todas</option>
-            <option value="branco">Branco</option>
-            <option value="preto">Preto</option>
-            <option value="cinza">Cinza</option>
-            <option value="colorido">Colorido</option>
-          </select>
-        </fieldset>
-
-        <fieldset>
-          <legend>Modelagem</legend>
-          <select name="modelagem">
-            <option value="">Todas</option>
-            <option value="unissex">Unissex</option>
-            <option value="feminina">Feminina</option>
-            <option value="infantil">Infantil</option>
-            <option value="plus-size">Plus size</option>
-          </select>
-        </fieldset>
-
-        <button type="submit">Aplicar filtros</button>
-      </form>
-    </section>
+   
 
     <section id="destaque" aria-label="Coleções em destaque">
       <h2>Coleções em destaque</h2>

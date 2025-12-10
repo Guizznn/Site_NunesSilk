@@ -2,7 +2,7 @@
     --ns-red: #e40000;    /* ajuste fino conforme a logo */
     --ns-dark: #111111;
     --ns-light: #ffffff;
-    --ns-gray: #f4f4f4;
+    --ns-gray: #f4f4f4d3;
   }
   
   /* Reseta simples */
@@ -26,16 +26,47 @@
   }
 
   .menu-toggle {
+  background-color: transparent;
   border: none;
   color: var(--ns-dark);
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   display: none; /* Escondido por padrão, mostrado no mobile */
-  padding: 0;
+  padding: 10px;
   align-items: center;
   gap: 0.5rem;
   z-index: 11;
+  }
+
+  .submenu {
+    list-style: none; /* Remove marcadores */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+  }
+
+  .submenu li a{
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .submenu li a:hover{
+    background-color: #eee;
+  }
+
+  .has-submenu.open .submenu{
+    display: block;
   }
 
   .menu-icon {
@@ -46,6 +77,11 @@
 
   .cart-button {
     text-decoration: none;
+    background-color: transparent;
+    display: none;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
     color: var(--ns-dark);
     font-size: 1.5rem;
     position: relative;
@@ -384,6 +420,25 @@
 
 #sobre-nos-conteudo li {
     margin-bottom: 0.5rem;
+}
+
+#nunes-silk-map {
+    height: 400px; /* ISSO É CRÍTICO para que o mapa apareça */
+    width: 100%;
+}
+
+.leaflet-container {
+    overflow: hidden;
+}
+
+.leaflet-tile-pane {
+    z-index: 2;
+}
+
+.leaflet-tile {
+    /* ... estilos para posicionar os pedaços do mapa ... */
+    position: absolute;
+    visibility: hidden; /* Os tiles só ficam visíveis depois de carregados */
 }
   
   /* FOOTER */

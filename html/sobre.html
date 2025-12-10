@@ -1,113 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Sobre Nós | Nunes Silk</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça a história e a missão da Nunes Silk.">
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <title>Sobre Nós | Nunes Silk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a história e a missão da Nunes Silk.">
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/pBB3iWaP+hRz7Qzs4="
+          crossorigin=""/>
 </head>
 <body>
-  
-   <nav id="side-menu" arial-label="Menu-lateral">
-            <div class="menu-search">
-                <input type="search" placeholder="Buscar por produtos">
-                <button aria-label="Buscar">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+    
+    <nav id="side-menu" arial-label="Menu-lateral">
+        <div class="menu-search">
+            <input type="search" placeholder="Buscar por produtos">
+            <button aria-label="Buscar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                  </svg>
-                </button>
-            </div>
-            
-            <ul class="nav-menu">
-              <li><a href="../html/index.html">Home</a></li>
-              <li><a href="#catalogo">Catálogo</a></li>
-              <li class="menu-group">
-                  <a href="#">LISO</a>
-                  <span class="arrow-icon"> > </span> 
+                </svg>
+            </button>
+        </div>
+        
+        <ul class="nav-menu">
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../index.html#catalogo">Catálogo</a></li>
+            <li class="menu-group">
+                <a href="#">LISO</a>
+                <span class="arrow-icon"> > </span> 
             </li>
-              <li class="menu-group">
-                  <a href="#">PERSONALIZADOS</a>
-                  <span class="arrow-icon"> > </span> 
-              </li>
-              <li><a href="../html/sobre.html">Sobre Nós</a></li>
-              <li><a href="#contato">Contato</a></li>
-              <li class="menu-action"><a href="#">♡ FAVORITOS</a></li>
-              <li class="menu-action"><a href="#">FAÇA LOGIN</a></li>
+            <li class="menu-group">
+                <a href="#">PERSONALIZADOS</a>
+                <span class="arrow-icon"> > </span> 
+            </li>
+            <li><a href="../html/sobre.html">Sobre Nós</a></li>
+            <li><a href="../index.html#contato">Contato</a></li>
+            <li class="menu-action"><a href="#">♡ FAVORITOS</a></li>
+            <li class="menu-action"><a href="#">FAÇA LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="top-bar">
+            <button class="menu-toggle" aria-controls="nav-menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+            
+            <a href="index.html" class="logo logo-center">
+                <img src="../assets/logo.png" alt="Nunes Silk Estamparia">
+            </a>
+            
+        </div>
+
+        <section class="page-title-banner">
+            <div class="hero-content">
+                <h1>Nossa História</h1>
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+        <section id="sobre-nos-conteudo">
+            <h2>Qualidade e Personalização</h2>
+            <p>A Nunes Silk nasceu do desejo de oferecer camisetas personalizadas de alta qualidade com foco total no cliente. Acreditamos que cada estampa conta uma história, e nossa missão é garantir que essa história seja impressa com a melhor tecnologia e os melhores tecidos do mercado.</p>
+            
+            <h3>Nossa Missão</h3>
+            <p>Ser a principal referência em personalização de vestuário no Brasil, oferecendo um processo simples, rápido e com excelência em durabilidade e conforto.</p>
+            
+            <h3>Nossos Valores</h3>
+            <ul>
+                <li>**Qualidade:** Usamos apenas malhas 100% algodão e tecnologia de estamparia de ponta (Silk Digital).</li>
+                <li>**Transparência:** Preços justos e comunicação clara com nossos clientes.</li>
+                <li>**Sustentabilidade:** Processos otimizados para redução de resíduos.</li>
             </ul>
-          </nav>
 
-  <header>
-    <div class="top-bar">
-      <button class="menu-toggle" aria-controls="nav-menu" aria-expanded="false">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-        </svg>
-      </button>
-      
-      <a href="index.html" class="logo logo-center">
-          <img src="../assets/logo.png" alt="Nunes Silk Estamparia">
-      </a>
-      
-    </div>
+            <section id="localizacao" aria-label="Nossa Localização">
+                <h2>Onde Estamos</h2>
+                <p>Visite-nos ou veja onde nossa fábrica de ideias está localizada.</p>
+                <div id="map-container">
+                    <div id="nunes-silk-map"></div>
+                </div>
+            </section>
+            
+            <article class="banner-destaque">
+                <h3>Seu Design, Nossa Arte.</h3>
+                <p>Comece a criar sua própria camiseta personalizada agora mesmo.</p> 
+                <a href="index.html#catalogo" class="btn-primary">Ver Modelos Básicos</a>
+            </article>
+            
+        </section>
+    </main>
 
-    <section class="page-title-banner">
-        <div class="hero-content">
-            <h1>Nossa História</h1>
-        </div>
-    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contato">
+                <h3>Entre em Contato</h3>
+                <p>Para cotações, dúvidas sobre personalização ou parcerias.</p>
+                <p class="email-link">✉️ contato@nunessilk.com.br</p>
+            </div>
 
-  </header>
-
-  <main>
-    <section id="sobre-nos-conteudo">
-      <h2>Qualidade e Personalização</h2>
-      <p>A Nunes Silk nasceu do desejo de oferecer camisetas personalizadas de alta qualidade com foco total no cliente. Acreditamos que cada estampa conta uma história, e nossa missão é garantir que essa história seja impressa com a melhor tecnologia e os melhores tecidos do mercado.</p>
-      
-      <h3>Nossa Missão</h3>
-      <p>Ser a principal referência em personalização de vestuário no Brasil, oferecendo um processo simples, rápido e com excelência em durabilidade e conforto.</p>
-      
-      <h3>Nossos Valores</h3>
-      <ul>
-        <li>**Qualidade:** Usamos apenas malhas 100% algodão e tecnologia de estamparia de ponta (Silk Digital).</li>
-        <li>**Transparência:** Preços justos e comunicação clara com nossos clientes.</li>
-        <li>**Sustentabilidade:** Processos otimizados para redução de resíduos.</li>
-      </ul>
-      
-      
-      <article class="banner-destaque">
-          <h3>Seu Design, Nossa Arte.</h3>
-          <p>Comece a criar sua própria camiseta personalizada agora mesmo.</p> <br>
-          <a href="index.html#catalogo" class="btn-primary">Ver Modelos Básicos</a>
-      </article>
-      
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-        <div class="footer-section contato">
-            <h3>Entre em Contato</h3>
-            <p>Para cotações, dúvidas sobre personalização ou parcerias.</p>
-            <p class="email-link">✉️ contato@nunessilk.com.br</p>
-        </div>
-
-        <div class="footer-section redes">
-            <h3>Siga-nos</h3>
-            <div class="social-icons">
-                <a href="https://instagram.com/nunessilk" target="_blank" aria-label="Instagram Nunes Silk">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                </a>
-                
-                <a href="mailto:contato@nunessilk.com.br" aria-label="Enviar E-mail">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </a>
+            <div class="footer-section redes">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/nunessilk" target="_blank" aria-label="Instagram Nunes Silk">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    
+                    <a href="mailto:contato@nunessilk.com.br" aria-label="Enviar E-mail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <p class="copyright">&copy; 2025 Nunes Silk. Todos os direitos reservados.</p>
-</footer>
-  
-  <script src="../js/script.js"></script>
+        <p class="copyright">&copy; 2025 Nunes Silk. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20n6c2vA98z/E8p/5wN7bT5v5C4a+aG+Fp6fL3q4Ww="
+            crossorigin=""></script>
+
+    <script src="../js/map.js"></script>
+    
+    <script src="../js/script.js"></script>
+
 </body>
 </html>
