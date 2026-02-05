@@ -32,8 +32,6 @@ Criar a **página inicial de um e-commerce** de camisetas personalizadas, exibin
 
 ## 🛠️ Tecnologias Utilizadas
 
-*(Adapte conforme o que você utilizou no projeto)*
-
 ### Front-end
 
 * **HTML5**

@@ -20,72 +20,89 @@
   }
   
   /* HEADER */
-  header {
-    background-color: #ffffff
-    color var(--ns-light);
-  }
+  /* Estilos baseados no código React/Tailwind enviado */
 
-  .menu-toggle {
-  background-color: transparent;
-  border: none;
-  color: var(--ns-dark);
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  display: none; /* Escondido por padrão, mostrado no mobile */
-  padding: 10px;
+.main-header {
+  background-color: #dc2626; /* red-600 */
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+.header-container {
+  max-width: 1200px; /* container mx-auto */
+  margin: 0 auto;
+  padding: 1rem; /* px-4 py-4 */
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
-  z-index: 11;
-  }
+  justify-content: space-between;
+}
 
-  .submenu {
-    list-style: none; /* Remove marcadores */
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 250px;
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    display: none;
-  }
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* gap-3 */
+}
 
-  .submenu li a{
-    display: block;
-    padding: 10px 15px;
-    color: #333;
-    text-decoration: none;
-  }
+.logo-img {
+  height: 4rem; /* h-16 */
+  width: auto;
+  background-color: white;
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.5rem; /* p-2 */
+}
 
-  .submenu li a:hover{
-    background-color: #eee;
-  }
+.brand-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+  margin: 0;
+}
 
-  .has-submenu.open .submenu{
-    display: block;
-  }
+.brand-subtitle {
+  font-size: 0.875rem; /* text-sm */
+  color: #fee2e2; /* text-red-100 */
+  margin: 0;
+}
 
-  .menu-icon {
-    font-size: 1.5rem;
-    line-height: 1;
-    background-color: transparent;
-  }
+/* Botão de Carrinho Circular */
+.cart-button {
+  position: relative;
+  background-color: white;
+  color: #dc2626; /* text-red-600 */
+  padding: 0.75rem; /* p-3 */
+  border-radius: 9999px; /* rounded-full */
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* shadow-md */
+  transition: background-color 0.2s; /* transition-colors */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .cart-button {
-    text-decoration: none;
-    background-color: transparent;
-    display: none;
-    cursor: pointer;
-    border: none;
-    padding: 10px;
-    color: var(--ns-dark);
-    font-size: 1.5rem;
-    position: relative;
-  }
+.cart-button:hover {
+  background-color: #fef2f2; /* hover:bg-red-50 */
+}
+
+/* O "Badge" Amarelo do Contador */
+.cart-badge {
+  position: absolute;
+  top: -0.5rem; /* -top-2 */
+  right: -0.5rem; /* -right-2 */
+  background-color: #facc15; /* bg-yellow-400 */
+  color: #7f1d1d; /* text-red-900 */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 700;
+  border-radius: 9999px;
+  height: 1.5rem; /* h-6 */
+  width: 1.5rem; /* w-6 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
   .logo {
     background-color: transparent;
@@ -99,16 +116,14 @@
   }
   
   .top-bar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.75rem 1rem;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    background-color: var(--ns-red);
+    color: var(--ns-light);
+    padding: 30px;
     justify-content: flex-start;
+    align-items: center;
     position: relative;
     z-index: 10;
-    background-color: #fff;
-    color: #333;
   }
   
   .logo img {
@@ -116,92 +131,14 @@
   }
   
   /* Navegação */
-  .nav-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-menu a {
-    color: var(--ns-light);
-    text-decoration: none;
-    font-weight: 500;
-    display: block;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(238, 228, 228, 0.1);
-  }
-  
-  .nav-menu a:hover {
-    color: var(--ns-red);
-  }
-
-  #side-menu {
-  position: fixed;
-  top: 0;
-  left: -300px; /* Escondido por padrão */
-  width: 280px;
-  height: 100%;
-  background-color: var(--ns-dark);
-  padding: 1.5rem 1rem;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-  transition: left 0.3s ease;
-  z-index: 100;
-}
-
-/* Estilo para o campo de busca dentro do menu lateral */
-.menu-search {
-    display: flex;
-    margin-bottom: 1.5rem;
-    padding-right: 1rem;
-}
-
-.menu-search input {
-    flex-grow: 1;
-    padding: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 4px 0 0 4px;
-    background-color: var(--ns-dark);
-    color: var(--ns-light);
-}
-
-.menu-search button {
-    background-color: var(--ns-red);
-    color: var(--ns-light);
-    border: none;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-}
-
-
-
-/* Estilo para os itens de menu com setas (como LISO e PERSONALIZADOS) */
-.menu-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-group a {
-    flex-grow: 1;
-}
 
 .arrow-icon {
-    font-size: 1.2rem;
+    font-size: 30rem;
     font-weight: 700;
     padding: 0 0.5rem;
     color: var(--ns-light);
 }
 
-/* Estilo para links de ação como Login/Favoritos */
-.menu-action a {
-    color: var(--ns-red); /* Destaca os links de ação */
-    font-weight: 600;
-}
-
-#side-menu.is-open {
-  left: 0; /* Exibe o menu */
-}
   
   /* HERO */
   .hero {
@@ -210,9 +147,9 @@
   }
   
   .hero-content {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 2.5rem 1rem;
+    padding: 0rem 0rem;
   }
   
   .hero h1 {
@@ -321,7 +258,8 @@
   
   /* Destaque */
   #destaque {
-    margin-bottom: 1.5rem;
+    padding: 0 40px
+    align-items: center;
   }
   
   #destaque h2 {
