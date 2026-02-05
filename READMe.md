@@ -1,6 +1,6 @@
 # Nunes Silk – Catálogo de Camisetas Personalizadas
 
-Projeto de vitrine e catálogo responsivo para a marca fictícia **Nunes Silk**, focada em personalização de camisetas, com interface otimizada para web e dispositivos móveis.
+Projeto de vitrine e catálogo responsivo para a marca **Nunes Silk**, focada em personalização de camisetas, com interface otimizada para web e dispositivos móveis.
 
 ---
 
